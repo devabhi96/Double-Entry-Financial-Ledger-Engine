@@ -41,4 +41,10 @@ public class Account {
     public AccountStatus getStatus() { return status; }
     public Instant getCreatedAt() { return createdAt; }
     public Instant getUpdatedAt() { return updatedAt; }
+
+    public void setBalance(BigDecimal balance) {
+        this.balance = balance;
+        this.updatedAt = Instant.now();
+    }
+
 }
